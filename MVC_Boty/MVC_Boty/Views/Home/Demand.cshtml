@@ -1,0 +1,190 @@
+﻿@{
+    ViewData["Title"] = "Boty E-shop";
+}
+
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <header>
+        <span>777 666 555 | info@nejlepsiboty.cz</span>
+        <a href="#">
+            <img src="images/img/profile-user.png" alt="profile">
+            <span class="login">Přihlásit se</span>
+        </a>
+    </header>
+
+    <section class="upper-images">
+        <a href="index.html"><img src="images/img/Group 4.png" alt="shoeslogo"></a>
+        <a href="#"><img src="images/img/loupe.png" alt="loupe" class="gr"></a>
+        <a href="demand.html"><img src="images/img/shopping-cart.png" alt="cart" class="gr"></a>
+        <a href="#"><img src="images/img/heart.png" alt="heart" class="gr"></a>
+    </section>
+
+    <table class="categories-table">
+        <tbody>
+            <tr>
+                <td class="uppertd">Chlapecké<img src="images/img/Group 169.png" alt="boy"></td>
+                <td class="uppertd">Dívčí<img src="images/img/Group 171.png" alt="girl"></td>
+            </tr>
+
+            <tr>
+                <td class="uppertd">Doplňky</td>
+                <td class="uppertd">Ostatní</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="navigator">
+        <a href="index.html">Domů</a>
+        <span>&gt;</span>
+        <a href="demand.html">Poptávka</a>
+    </div>
+
+    <div class="cart-form">
+        <img src="images/img/Child.png" alt="child">
+        <div class="form-place">
+            <div class="form-header">
+                <h2>Poptávkový formulář</h2>
+                <p>Vyplňte formulář níže a my se Vám ozveme jakmile to půjde.</p>
+            </div>
+
+            <form action="demand.php" method="get" class="demand-form">
+                <label for="Name">Jméno</label>
+                <input type="text" placeholder="Zadejte své jméno..." name="Name">
+
+                <label for="Surname">Příjmení</label>
+                <input type="text" placeholder="Zadejte své příjmení..." name="Surname">
+
+                <label for="E-Mail">E-mail</label>
+                <input type="email" placeholder="Zadejte svůj e-mail..." name="E-Mail" required>
+
+                <label for="Phone">Telefon</label>
+                <input type="tel" placeholder="Zadejte svůj telefon..." name="Phone">
+
+                <label for="Country">Země</label>
+                <input list="countries" placeholder="Vyber zemi" name="Country">
+                <datalist id="countries">
+                    <option value="ČR">Česká republika</option>
+                    <option value="SR">Slovenská republika</option>
+                </datalist>
+
+                <label for="payment">Způsob platby</label>
+                <div class="payment-type">
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Hotově</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Převodem</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Kartou</span>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button class="back-button" type="reset">
+                        <img src="images/img/Back_Arrow.png" alt="back_arr">
+                        Zpět
+                    </button>
+                    <button class="continue-button" type="submit">
+                        <img src="images/img/Front_Arrow.png" alt="front_arr">
+                        Pokračovat
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="bottom-part">
+        <div class="pre-footer">
+            <p class="pre-footer-capitals">O nás</p>
+            <p class="Lorem">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quia corporis molestias tempora laudantium dolore ipsam tempore voluptatibus beatae inventore atque porro eligendi nostrum qui, adipisci officiis optio numquam aspernatur.
+            </p>
+
+            <img src="images/img/Logo_white.png" alt="shoeslogo">
+
+            <p class="pre-footer-capitals">Naše nabídka</p>
+
+            <div class="Lists-grid">
+                <div>
+                    <p>Dívčí</p>
+                    <ul class="pr-f-list">
+                        <li>
+                            Tenisky
+                        </li>
+                        <li>
+                            Holinky
+                        </li>
+                        <li>
+                            Sandály
+                        </li>
+                        <li>
+                            Baleríny
+                        </li>
+                        <li>
+                            Polobotky
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Chlapecké</p>
+                    <ul class="pr-f-list">
+                        <li>
+                            Tenisky
+                        </li>
+                        <li>
+                            Holinky
+                        </li>
+                        <li>
+                            Sandály
+                        </li>
+                        <li>
+                            Baleríny
+                        </li>
+                        <li>
+                            Polobotky
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer-capitals">Kontaktujte nás</p>
+
+            <div class="footer-contact">
+                <img src="images/img/6.png" alt="letter">
+                <span>info@nejlepsiboty.cz</span>
+            </div>
+
+            <div class="footer-contact">
+                <img src="images/img/8.png" alt="phone">
+                <span>+420 777 666 555</span>
+            </div>
+
+            <div class="footer-socials">
+                <img src="images/img/facebook.png" alt="fb">
+                <img src="images/img/Group 153.png" alt="instagram">
+                <img src="images/img/twitter.png" alt="X">
+            </div>
+
+            <p>Livtvínovská 600, Praha 9, 190 00</p>
+        </footer>
+    </div>
+</body>
+</html>

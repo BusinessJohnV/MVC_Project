@@ -1,48 +1,112 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿header {
+    background-color: #34436b;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    height: 60px;
 }
 
-a {
-  color: #0077cc;
+.login {
+    display: none;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+header > span {
+    align-self: center;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+header > a {
+    align-self: center;
+    justify-self: right;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.upper-images {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    margin: 10px 5px 5px 5px;
+    align-items: center;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.gr {
+    justify-self: center;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.categories-table {
+    width: 95%;
+    color: #b4bed5;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    justify-self: center;
+    border-collapse: collapse;
+    font-size: 16px;
 }
+
+.uppertd {
+    border-style: solid;
+    border-color: #b4bed5;
+    border-width: 2px;
+    height: 50px;
+}
+
+.pre-footer {
+    background-color: #c7232e;
+    color: white;
+    padding: 5px 5px 10px 5px;
+}
+
+.pre-footer-capitals {
+    text-transform: uppercase;
+    margin: 50px 0px 30px 0px;
+}
+
+.Lorem {
+    width: 80%;
+    text-align: justify;
+    margin: 0px 0px 40px 0px;
+}
+
+.Lists-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+}
+
+.pr-f-list {
+    line-height: 1.8;
+    list-style: circle;
+}
+
+footer {
+    background-color: #34436b;
+    color: white;
+    padding: 5px;
+}
+
+.footer-capitals {
+    text-transform: uppercase;
+    margin: 30px 0px 30px 0px;
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin: 15px 0px 15px 0px;
+}
+
+    .footer-contact > img, .footer-contact > p {
+        text-align: center;
+    }
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0px 15px 0px;
+}
+
