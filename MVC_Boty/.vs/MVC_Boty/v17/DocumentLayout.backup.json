@@ -1,38 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\",
+  "WorkspaceRootPath": "C:\\Users\\vostreljan\\Desktop\\MVC_Project\\MVC_Boty\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\database\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\database\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\vostreljan\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\jenik\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|c:\\users\\vostreljan\\desktop\\mvc_project\\mvc_boty\\mvc_boty\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{72B0D0E3-B7ED-498F-9CC1-F054C5A181C0}|MVC_Boty\\MVC_Boty.csproj|solutionrelative:mvc_boty\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,106 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Enums.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\Enums.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Enums.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:14:09.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Accounts.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Accounts.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\Accounts.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Accounts.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\Accounts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:03:58.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Categories.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Categories.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\Categories.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Categories.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\Categories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:04:06.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderDetails.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\OrderDetails.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\OrderDetails.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\OrderDetails.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\OrderDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:04:14.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Orders.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Orders.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\Orders.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Orders.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\Orders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:04:23.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Products.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\Products.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Products.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\Products.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:04:31.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Storage.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Storage.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Models\\Storage.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Models\\Storage.cs",
-              "RelativeToolTip": "MVC_Boty\\Models\\Storage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:04:38.735Z",
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\vostreljan\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "MVC_Boty\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\vostreljan\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "MVC_Boty\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-15T08:35:37.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyContext.cs",
-              "DocumentMoniker": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Database\\MyContext.cs",
-              "RelativeDocumentMoniker": "MVC_Boty\\Database\\MyContext.cs",
-              "ToolTip": "C:\\Users\\jenik\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\Database\\MyContext.cs",
-              "RelativeToolTip": "MVC_Boty\\Database\\MyContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T10:30:51.544Z",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\vostreljan\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "MVC_Boty\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\vostreljan\\Desktop\\MVC_Project\\MVC_Boty\\MVC_Boty\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "MVC_Boty\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAewJkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-15T08:34:46.428Z",
               "EditorCaption": ""
             }
           ]

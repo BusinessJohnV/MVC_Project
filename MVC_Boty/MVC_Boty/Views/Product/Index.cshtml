@@ -1,0 +1,240 @@
+﻿@{
+    ViewData["Title"] = "Boty E-shop";
+}
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVC_Boty.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="navigator">
+        <a asp-controller="Home" asp-action="Index">Domů</a>
+        <span>&gt;</span>
+        <a href="">Dívčí boty</a>
+        <span>&gt;</span>
+        <a href="product.html">Tenisky</a>
+    </div>
+
+    <div class="product-main-pic"><img src="~/images/img2/Barefoot-Brown.png" alt="hnědé boty"></div>
+
+    <div class="product-side-pic">
+        <a href=""><img src="~/images/img2/bota2.png" alt="bota2"></a>
+        <a href=""><img src="~/images/img2/bota3.png" alt="bota3"></a>
+        <a href=""><img src="~/images/img2/bota4.png" alt="bota4"></a>
+    </div>
+
+    <div class="product-name">
+        <p>Benjamin Velcro Dark Grey</p>
+    </div>
+
+    <div class="product-divider"></div>
+
+    <div class="product-parameters">
+        <p>Barva</p>
+
+        <div class="product-colors">
+            <a href=""><div class="color1"></div></a>
+            <a href=""><div class="color2"></div></a>
+            <a href=""><div class="color3"></div></a>
+            <a href=""><div class="color4"></div></a>
+            <a href=""><div class="color5"></div></a>
+        </div>
+
+        <p>Velikost</p>
+
+        <div class="product-sizes">
+            <a href="">21</a>
+            <a href="">22</a>
+            <a href="">23</a>
+            <a href="">24</a>
+            <a href="">25</a>
+            <a href="">26</a>
+            <a href="">27</a>
+        </div>
+    </div>
+
+    <div class="product-divider"></div>
+
+    <div class="price-part">
+        <h2>Skladem</h2>
+        <p>699 Kč</p>
+
+        <div class="price-area">
+            <p>529 Kč</p>
+
+            <a href="">
+                <img src="images/img/shopping-cart.png" alt="">
+                Do košíku
+            </a>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Informace o produktu</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias neque eligendi tempore esse dolores facilis temporibus, cum ut sequi hic ipsam veritatis corrupti culpa cumque deleniti. Eos quo eaque quis.
+        </p>
+    </div>
+
+    <div class="parameters-container">
+        <div class="header">Parametry produktu</div>
+
+        <div class="parameter-row">
+            <div class="parameter-label">Barva</div>
+            <div class="parameter-value">Tmavě modrá</div>
+        </div>
+
+        <div class="parameter-row">
+            <div class="parameter-label">Druh</div>
+            <div class="parameter-value">Do deště, turistické</div>
+        </div>
+
+        <div class="parameter-row">
+            <div class="parameter-label">Materiál</div>
+            <div class="parameter-value">Guma</div>
+        </div>
+
+        <div class="parameter-row">
+            <div class="parameter-label">Určení</div>
+            <div class="parameter-value">Chlapecké</div>
+        </div>
+
+        <div class="parameter-row">
+            <div class="parameter-label">Kód</div>
+            <div class="parameter-value">BG004-001</div>
+        </div>
+    </div>
+
+    <div class="products-header">
+        <p>Mohlo by se</p>
+        <p>Vám líbit</p>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/Barefoot-Brown.png" alt="hnědá bota">
+            <p>Papučky barefoot hnědé kožené</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/Barefoot-Pink.png" alt="růžová bota">
+            <p>Papučky barefoot růžové</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/Sandals-Blue.png" alt="modré sandále">
+            <p>Sandálky modré umělé</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/High-Shoes.png" alt="modré vysoké boty">
+            <p>Netlačící boty s vysokou špičkou</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/Barefoot-Brown.png" alt="hnědá bota">
+            <p>Papučky barefoot hnědé kožené</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/Barefoot-Pink.png" alt="růžová bota">
+            <p>Papučky barefoot růžové</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/Sandals-Blue.png" alt="modré sandále">
+            <p>Sandálky modré umělé</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="product.html">
+            <img src="~/images/img2/High-Shoes.png" alt="modré vysoké boty">
+            <p>Netlačící boty s vysokou špičkou</p>
+            <span class="new-price">529 Kč</span>
+            <span class="old-price">699 Kč</span>
+            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
+        </a>
+    </div>
+
+    <div class="divider">
+        <img src="~/images/img/Group 295.png" alt="feet">
+    </div>
+
+    <section class="storage">
+        <div class="storage-availability">
+            <img src="~/images/img/Group 195.png" alt="storage">
+            <p>Vše máme skladem</p>
+        </div>
+
+        <div class="free-delivery">
+            <img src="~/images/img/Group 196.png" alt="delivery">
+            <p>Doprava zdarma</p>
+        </div>
+
+        <div class="size-measurement">
+            <img src="~/images/img/Group 293.png" alt="measure">
+            <p>Jak měřit velikost</p>
+        </div>
+    </section>
+
+    <div class="newsletter">
+        <p class="upper-text-form">Nezmeškejte nové a výhodné akce</p>
+        <p class="lower-text-form">Zadejte svůj email a obratem vám zašleme PDF s inspirací zdarma.</p>
+
+        <form action="newsletter.php" method="get" class="newsletter-form">
+            <input type="email" name="newsletter" placeholder="Zadej svůj email..." required>
+
+            <div class="products-button">
+                <a href="">
+                    přihlásit
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

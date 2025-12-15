@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Boty E-shop";
+}
+
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVC_Boty.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="navigator">
+        <a asp-controller="Home" asp-action="Index">Domů</a>
+        <span>&gt;</span>
+        <a asp-controller="Demand" asp-action="Index">Poptávka</a>
+    </div>
+
+    <div class="cart-form">
+        <img src="~/images/img/Child.png" alt="child">
+        <div class="form-place">
+            <div class="form-header">
+                <h2>Poptávkový formulář</h2>
+                <p>Vyplňte formulář níže a my se Vám ozveme jakmile to půjde.</p>
+            </div>
+
+            <form action="demand.php" method="get" class="demand-form">
+                <label for="Name">Jméno</label>
+                <input type="text" placeholder="Zadejte své jméno..." name="Name">
+
+                <label for="Surname">Příjmení</label>
+                <input type="text" placeholder="Zadejte své příjmení..." name="Surname">
+
+                <label for="E-Mail">E-mail</label>
+                <input type="email" placeholder="Zadejte svůj e-mail..." name="E-Mail" required>
+
+                <label for="Phone">Telefon</label>
+                <input type="tel" placeholder="Zadejte svůj telefon..." name="Phone">
+
+                <label for="Country">Země</label>
+                <input list="countries" placeholder="Vyber zemi" name="Country">
+                <datalist id="countries">
+                    <option value="ČR">Česká republika</option>
+                    <option value="SR">Slovenská republika</option>
+                </datalist>
+
+                <label for="payment">Způsob platby</label>
+                <div class="payment-type">
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Hotově</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Převodem</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Kartou</span>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button class="back-button" type="reset">
+                        <img src="~/images/img/Back_Arrow.png" alt="back_arr">
+                        Zpět
+                    </button>
+                    <button class="continue-button" type="submit">
+                        <img src="~/images/img/Front_Arrow.png" alt="front_arr">
+                        Pokračovat
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

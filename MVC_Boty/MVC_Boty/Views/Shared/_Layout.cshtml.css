@@ -5,16 +5,19 @@
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     height: 60px;
+    padding: 0 40px;
 }
 
 .login {
-    display: none;
+    display: inline;
 }
 
-header > span {
+header > a > span {
     align-self: center;
     padding: 10px;
     font-size: 16px;
+    color: white;
+    padding-left: 5px;
 }
 
 header > a {
@@ -23,13 +26,17 @@ header > a {
     width: 30px;
     height: 30px;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
 }
 
 .upper-images {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
-    margin: 10px 5px 5px 5px;
     align-items: center;
+    grid-template-columns: 200px 1fr auto auto auto;
+    margin: 20px 40px;
+    gap: 20px;
 }
 
 .gr {
@@ -57,12 +64,66 @@ header > a {
 .pre-footer {
     background-color: #c7232e;
     color: white;
-    padding: 5px 5px 10px 5px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
+    .pre-footer > p:first-child {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .pre-footer > p:nth-child(2) {
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .pre-footer img {
+        max-width: 120px;
+        margin: 20px 0;
+        display: block;
+    }
 
 .pre-footer-capitals {
     text-transform: uppercase;
     margin: 50px 0px 30px 0px;
+}
+
+.pre-footer > p:nth-of-type(3) {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.pre-footer > p:nth-of-type(4),
+.pre-footer > p:nth-of-type(5) {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pre-footer ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    list-style: disc;
+    margin-bottom: 0;
+}
+
+    .pre-footer ul li {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+.bottom-part {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 .Lorem {
@@ -86,8 +147,37 @@ header > a {
 footer {
     background-color: #34436b;
     color: white;
-    padding: 5px;
+    padding: 20px;
 }
+
+    footer > p:first-child {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    footer img {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    footer > p {
+        margin: 15px 0;
+        font-size: 14px;
+    }
+
+        footer > p:last-child {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+    footer > img:nth-of-type(3),
+    footer > img:nth-of-type(4),
+    footer > img:nth-of-type(5) {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
 
 .footer-capitals {
     text-transform: uppercase;
@@ -109,4 +199,3 @@ footer {
     gap: 10px;
     margin: 15px 0px 15px 0px;
 }
-
