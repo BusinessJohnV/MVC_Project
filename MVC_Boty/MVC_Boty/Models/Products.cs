@@ -12,7 +12,7 @@
 
 
         public ICollection<OrderDetails> OrderDetails { get; set; }
-        public ICollection<Storage> Storages { get; set; }
+        public ICollection<ProductDetails> Storages { get; set; }
         public Categories Category { get; set; }
     }
 }

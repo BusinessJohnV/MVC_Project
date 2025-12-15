@@ -1,4 +1,6 @@
-﻿namespace MVC_Boty.Models
+﻿using System.Security.Principal;
+
+namespace MVC_Boty.Models
 {
     public class Accounts
     {
@@ -13,6 +15,8 @@
         public string Phone { get; set; }
 
         public Country Country { get; set; }
+
+        public AccountType AccountType { get; set; }
 
 
         public ICollection<Orders> Orders { get; set; }

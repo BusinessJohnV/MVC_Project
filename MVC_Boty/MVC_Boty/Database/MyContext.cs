@@ -15,7 +15,7 @@ namespace MVC_Boty.Database
 
         public DbSet<Products> Products { get; set; }
 
-        public DbSet<Storage> Storage { get; set; }
+        public DbSet<ProductDetails> Storage { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -59,13 +59,21 @@ namespace MVC_Boty.Database
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId);
 
-            modelBuilder.Entity<Storage>()
+            modelBuilder.Entity<ProductDetails>()
                 .HasKey(s => s.Id);
 
-            modelBuilder.Entity<Storage>()
-                .HasOne(s => s.Product)
+            modelBuilder.Entity<ProductDetails>()
+                .HasOne(pd => pd.Product)
                 .WithMany(p => p.Storages)
-                .HasForeignKey(s => s.ProductId);
+                .HasForeignKey(pd => pd.ProductId);
+
+            modelBuilder.Entity<Stock>()
+                .HasKey();
+
+            modelBuilder.Entity<Stock>()
+                .HasOne(s => s.ProductDetail)
+                .WithMany(pd => pd.Stocks)
+                .HasForeignKey(s => s.ProductDetailId);
         }
     }
 }

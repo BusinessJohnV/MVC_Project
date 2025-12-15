@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .divider {
     display: flex;
     align-items: center;
@@ -48,13 +52,12 @@
 
 .top-advert {
     display: block;
-    background-image: url(images/img/03-02.png);
+    background-image: url(../images/img/03-02.png);
     background-repeat: no-repeat;
     background-position: 50%;
     height: 450px;
     align-content: center;
     margin: 20px 40px 20px 40px;
-    align-items: right;
 }
 
     .top-advert > p {
@@ -71,7 +74,7 @@
 }
 
 .lower-div-m {
-    background-image: url(images/img/01.png);
+    background-image: url(../images/img/01.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
@@ -86,7 +89,7 @@
 }
 
 .lower-div-f {
-    background-image: url(images/img/02.png);
+    background-image: url(../images/img/02.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
@@ -101,7 +104,7 @@
 }
 
 .lower-div-o {
-    background-image: url(images/img/03-01.png);
+    background-image: url(../images/img/03-01.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
@@ -169,24 +172,23 @@ products-button:hover {
 
     .product > a > .product-cart {
         width: 30px;
-        height: width;
+        height: 30px;
         display: none;
     }
 
     .product:hover {
         border-color: #c7232f;
-        p
+    }
 
-{
-    font-weight: bold;
+.cart-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 a > .product-cart {
     width: 30px;
     height: 30px;
     display: inline;
-}
-
 }
 
 .start-text {
@@ -236,11 +238,10 @@ a > .product-cart {
     }
 
 .newsletter {
-    background-image: url(images/img2/Newsletter.png);
-    margin-top: 30px;
+    background-image: url(../images/img2/Newsletter.png);
+    margin: 30px 0px 0px 0px;
     height: 300px;
     background-repeat: no-repeat;
-    background-position: 35% 20%;
     padding: 8px;
 }
 
@@ -303,10 +304,6 @@ a > .product-cart {
 .form-header > p {
     margin: 0px 10px 0px 10px;
     color: #304068;
-}
-
-.cart-form > img {
-    display: none;
 }
 
 .demand-form {

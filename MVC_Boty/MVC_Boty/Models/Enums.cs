@@ -23,4 +23,10 @@
         Zlínský_kraj,
         Moravskoslezský_kraj
     }
+
+    public enum AccountType
+    {
+        User,
+        Admin
+    }
 }

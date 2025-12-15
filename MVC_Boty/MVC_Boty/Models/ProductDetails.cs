@@ -1,6 +1,6 @@
 ﻿namespace MVC_Boty.Models
 {
-    public class Storage
+    public class ProductDetails
     {
         public int Id { get; set; }
 
@@ -15,6 +15,7 @@
         public decimal Price { get; set; }
 
 
+        public ICollection<Stock> Stocks { get; set; }
         public Products Product { get; set; }
     }
 }

@@ -7,6 +7,78 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\1 HOME desktop.jpg" />
+    <None Include="wwwroot\images\1 HOME mobile.jpg" />
+    <None Include="wwwroot\images\2 PRODUCT desktop.jpg" />
+    <None Include="wwwroot\images\2 PRODUCT mobile.jpg" />
+    <None Include="wwwroot\images\3 DEMAND desktop.jpg" />
+    <None Include="wwwroot\images\3 DEMAND mobile.jpg" />
+    <None Include="wwwroot\images\img2\10e0f753-ec99-11eb-9461-02420a000b04.png" />
+    <None Include="wwwroot\images\img2\15146773-eb93-11eb-9461-02420a000b04.png" />
+    <None Include="wwwroot\images\img2\20c2c89d-ae92-11ec-b9bd-02420a000a27.png" />
+    <None Include="wwwroot\images\img2\2930e14d-da4b-11eb-8d3f-02420a000b23.png" />
+    <None Include="wwwroot\images\img2\5a358f8ad37329.3086527515134595948661.png" />
+    <None Include="wwwroot\images\img2\79ec4063-e3fd-11eb-8d3f-02420a000b23.png" />
+    <None Include="wwwroot\images\img2\7c895c56-e3fd-11eb-8d3f-02420a000b23.png" />
+    <None Include="wwwroot\images\img2\8291fafa-e3fd-11eb-8d3f-02420a000b23.png" />
+    <None Include="wwwroot\images\img2\a09dbd19-0357-11ec-a9ba-02420a000a40.png" />
+    <None Include="wwwroot\images\img2\a58593ea-26cb-11ed-842e-02420a000a33.png" />
+    <None Include="wwwroot\images\img2\Barefoot-Brown.png" />
+    <None Include="wwwroot\images\img2\Barefoot-Pink.png" />
+    <None Include="wwwroot\images\img2\bota1.png" />
+    <None Include="wwwroot\images\img2\bota2.png" />
+    <None Include="wwwroot\images\img2\bota3.png" />
+    <None Include="wwwroot\images\img2\bota4.png" />
+    <None Include="wwwroot\images\img2\bota5.png" />
+    <None Include="wwwroot\images\img2\High-Shoes.png" />
+    <None Include="wwwroot\images\img2\logo.webp" />
+    <None Include="wwwroot\images\img2\Newsletter.png" />
+    <None Include="wwwroot\images\img2\Sandals-Blue.png" />
+    <None Include="wwwroot\images\img2\Thumbs.db" />
+    <None Include="wwwroot\images\img\01.png" />
+    <None Include="wwwroot\images\img\02.png" />
+    <None Include="wwwroot\images\img\03-01.png" />
+    <None Include="wwwroot\images\img\03-02.png" />
+    <None Include="wwwroot\images\img\6.png" />
+    <None Include="wwwroot\images\img\6.svg" />
+    <None Include="wwwroot\images\img\8.png" />
+    <None Include="wwwroot\images\img\8.svg" />
+    <None Include="wwwroot\images\img\Back_Arrow.png" />
+    <None Include="wwwroot\images\img\Child.png" />
+    <None Include="wwwroot\images\img\facebook.png" />
+    <None Include="wwwroot\images\img\facebook.svg" />
+    <None Include="wwwroot\images\img\Front_Arrow.png" />
+    <None Include="wwwroot\images\img\Group 153.png" />
+    <None Include="wwwroot\images\img\Group 153.svg" />
+    <None Include="wwwroot\images\img\Group 169.png" />
+    <None Include="wwwroot\images\img\Group 169.svg" />
+    <None Include="wwwroot\images\img\Group 171.png" />
+    <None Include="wwwroot\images\img\Group 171.svg" />
+    <None Include="wwwroot\images\img\Group 195.png" />
+    <None Include="wwwroot\images\img\Group 195.svg" />
+    <None Include="wwwroot\images\img\Group 196.png" />
+    <None Include="wwwroot\images\img\Group 196.svg" />
+    <None Include="wwwroot\images\img\Group 293.png" />
+    <None Include="wwwroot\images\img\Group 293.svg" />
+    <None Include="wwwroot\images\img\Group 295.png" />
+    <None Include="wwwroot\images\img\Group 295.svg" />
+    <None Include="wwwroot\images\img\Group 4.png" />
+    <None Include="wwwroot\images\img\Group 4.svg" />
+    <None Include="wwwroot\images\img\heart.png" />
+    <None Include="wwwroot\images\img\heart.svg" />
+    <None Include="wwwroot\images\img\key.png" />
+    <None Include="wwwroot\images\img\key.svg" />
+    <None Include="wwwroot\images\img\Logo_white.png" />
+    <None Include="wwwroot\images\img\loupe.png" />
+    <None Include="wwwroot\images\img\loupe.svg" />
+    <None Include="wwwroot\images\img\profile-user.png" />
+    <None Include="wwwroot\images\img\profile-user.svg" />
+    <None Include="wwwroot\images\img\shopping-cart.png" />
+    <None Include="wwwroot\images\img\twitter.png" />
+    <None Include="wwwroot\images\img\twitter.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.EntityFrameworkCore" Version="9.0.9" />
   </ItemGroup>
 
