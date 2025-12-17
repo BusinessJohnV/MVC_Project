@@ -30,6 +30,11 @@ namespace MVC_Boty.Database
             modelBuilder.Entity<Categories>()
                 .HasKey(c => c.Id);
 
+            modelBuilder.Entity<Categories>()
+                .HasOne(c => c.Category)
+                .WithMany(c => c.ParentCategories)
+                .HasForeignKey(c => c.ParentId);
+
             modelBuilder.Entity<OrderDetails>()
                 .HasKey(od => new {od.OrderId, od.ProductId});
 
@@ -66,14 +71,6 @@ namespace MVC_Boty.Database
                 .HasOne(pd => pd.Product)
                 .WithMany(p => p.Storages)
                 .HasForeignKey(pd => pd.ProductId);
-
-            modelBuilder.Entity<Stock>()
-                .HasKey();
-
-            modelBuilder.Entity<Stock>()
-                .HasOne(s => s.ProductDetail)
-                .WithMany(pd => pd.Stocks)
-                .HasForeignKey(s => s.ProductDetailId);
         }
     }
 }

@@ -8,6 +8,7 @@ namespace MVC_Boty
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSession();
 
             var app = builder.Build();
 
@@ -20,7 +21,10 @@ namespace MVC_Boty
 
             app.UseAuthorization();
 
+            app.UseSession();
+
             app.MapStaticAssets();
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
