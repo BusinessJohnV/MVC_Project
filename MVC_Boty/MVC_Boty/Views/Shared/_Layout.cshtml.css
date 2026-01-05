@@ -10,9 +10,6 @@
 
 .login {
     display: inline;
-}
-
-header > a > span {
     align-self: center;
     padding: 10px;
     font-size: 16px;

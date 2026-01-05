@@ -14,7 +14,14 @@
         <span>777 666 555 | info@nejlepsiboty.cz</span>
         <a asp-controller="Login" asp-action="Index">
             <img src="~/images/img/profile-user.png" alt="profile">
-            <span class="login">Přihlásit se</span>
+            @if (Context.Session.GetString("Login") == null)
+            {
+                <span class="login">Přihlásit se</span>
+            }
+            else
+            {
+                <span class="login">Účet</span>
+            }
         </a>
     </header>
 

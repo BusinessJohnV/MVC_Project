@@ -10,8 +10,32 @@
     <link rel="stylesheet" href="~/MVC_Boty.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <header>
+        <span>777 666 555 | info@nejlepsiboty.cz</span>
+        <a asp-controller="Login" asp-action="Index">
+            <img src="~/images/img/profile-user.png" alt="profile">
+            <span class="login">Přihlásit se</span>
+        </a>
+    </header>
+
+    <section class="upper-images">
+        <a asp-controller="Home" asp-action="Index"><img src="~/images/img/Group 4.png" alt="shoeslogo"></a>
+        <a href="#"><img src="~/images/img/loupe.png" alt="loupe" class="gr"></a>
+        <a asp-controller="Demand" asp-action="Index"><img src="~/images/img/shopping-cart.png" alt="cart" class="gr"></a>
+        <a href="#"><img src="~/images/img/heart.png" alt="heart" class="gr"></a>
+    </section>
+
+    <div class="nav-bar">
+        <div class="nav-item active">Products</div>
+        <div class="nav-item">Categories</div>
+        <div class="nav-item">Accounts</div>
+        <div class="nav-item">Orders</div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
