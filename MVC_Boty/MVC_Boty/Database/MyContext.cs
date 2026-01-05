@@ -15,11 +15,13 @@ namespace MVC_Boty.Database
 
         public DbSet<Products> Products { get; set; }
 
+        public DbSet<ProductDetails> ProductDetails { get; set; }
+
         public DbSet<ProductDetails> Storage { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=mysqlstudenti.litv.sssvt.cz;database=3b1_vostreljan_db1;user=vostreljan;password=123456");
+            optionsBuilder.UseMySQL("server=mysqlstudenti.litv.sssvt.cz;database=4b1_vostreljan_db1;user=vostreljan;password=123456");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

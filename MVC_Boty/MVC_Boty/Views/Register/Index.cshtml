@@ -1,4 +1,61 @@
-﻿@model ViewModel
+﻿@model RegisterModel
 @{
     ViewData["Title"] = "Register Page";
 }
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Vytvořit účet</h1>
+        <p class="subtitle">Vytvořte si účet a nakupujte snadněji.</p>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="firstname">Name</label>
+                <input type="text" id="firstname" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lastname">Surname</label>
+                <input type="text" id="lastname" placeholder="Enter your surname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <div class="password-strength">
+                    <div class="password-strength-bar" id="strengthBar"></div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div class="signin-link">
+            Už máte účet? <a asp-controller="Login" asp-action="Index">Přihlaste se</a>
+        </div>
+    </div>
+    </body>
+</html>

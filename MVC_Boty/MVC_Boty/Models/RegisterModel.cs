@@ -1,11 +1,7 @@
-﻿using System.Security.Principal;
-
-namespace MVC_Boty.Models
+﻿namespace MVC_Boty.Models
 {
-    public class Accounts
+    public class RegisterModel
     {
-        public int Id { get; set; }
-
         public string Username { get; set; }
 
         public string Password { get; set; }
@@ -19,10 +15,5 @@ namespace MVC_Boty.Models
         public string Phone { get; set; }
 
         public Country Country { get; set; }
-
-        public AccountType AccountType { get; set; }
-
-
-        public ICollection<Orders> Orders { get; set; }
     }
 }
