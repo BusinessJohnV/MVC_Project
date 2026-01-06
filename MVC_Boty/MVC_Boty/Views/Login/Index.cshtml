@@ -2,32 +2,30 @@
 @{
     ViewData["Title"] = "Login Page";
 }
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome back</h1>
-        <p class="subtitle">Please enter your details to sign in</p>
 
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter your username" required>
-            </div>
+@section loginstyles {
+    <link rel="stylesheet" href="~/css/Login.css" />
+}
 
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
-            </div>
+<div class="container">
+    <h1>Welcome back</h1>
+    <p class="subtitle">Please enter your details to sign in</p>
 
-            <button type="submit">Přihlásit se</button>
-        </form>
-
-        <div class="signup-link">
-            Nemáte účet, <a asp-controller="Register" asp-action="Index">Registrujte se</a>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
         </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit">Přihlásit se</button>
+    </form>
+
+    <div class="signup-link">
+        Nemáte účet, <a asp-controller="Register" asp-action="Index">Registrujte se</a>
     </div>
-</body>
-</html>
+</div>

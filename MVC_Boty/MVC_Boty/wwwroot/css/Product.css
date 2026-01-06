@@ -1,0 +1,370 @@
+﻿.products-button {
+    text-align: center;
+}
+
+products-button:hover {
+    background-color: #8a1920;
+}
+
+.products-button > a {
+    font-size: 16px;
+    background-color: #c7232f;
+    border-style: none;
+    padding: 15px;
+}
+
+.products-button > a {
+    color: white;
+}
+
+.product:nth-child(5),
+.product:nth-child(6),
+.product:nth-child(7),
+.product:nth-child(8) {
+    display: none;
+}
+
+.product {
+    border-style: solid;
+    border-color: #b4bed5;
+    margin: 10px;
+    display: inline-block;
+    width: calc(25% - 40px);
+    vertical-align: top;
+}
+
+    .product > a > img {
+        width: 100%;
+        height: width;
+    }
+
+    .product > a > p {
+        font-size: 18px;
+        color: #304068;
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .product > a > .product-cart {
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+
+    .product:hover {
+        border-color: #c7232f;
+    }
+
+.navigator {
+    margin: 20px 0px 20px 10px;
+}
+
+    .navigator > a:nth-child(1) {
+        color: #c7232e;
+    }
+
+    .navigator > span:nth-child(2) {
+        color: #c7232e;
+    }
+
+    .navigator > a:nth-child(3) {
+        color: #304068;
+    }
+
+.product-main-pic {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #b4bed5;
+    margin: 10px;
+}
+
+    .product-main-pic > img {
+        width: 96%;
+    }
+
+.product-side-pic {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 10px;
+    width: 95%;
+}
+
+    .product-side-pic > a > img {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #b4bed5;
+        align-self: center;
+        flex: 1;
+        width: 97%;
+        height: 97%;
+    }
+
+.product-name {
+    font-weight: bold;
+    font-size: 35px;
+    color: #304068;
+    margin: 10px;
+}
+
+.product-divider {
+    content: "";
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b4bfd5;
+    margin: 0px 10px 0px 10px;
+}
+
+.product-parameters {
+    margin: 20px 10px 20px 10px;
+}
+
+    .product-parameters > p {
+        color: #304068;
+        margin: 20px 0px 5px 0px;
+        font-weight: bold;
+    }
+
+.product-colors {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+    .product-colors > a > div {
+        width: 30px;
+        height: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 50%;
+        border-color: #b3bed4;
+    }
+
+.color1:hover,
+.color2:hover,
+.color3:hover,
+.color4:hover,
+.color5:hover {
+    border-color: #c72230;
+}
+
+.color1 {
+    background-color: #314069;
+}
+
+.color2 {
+    background-color: #000000;
+}
+
+.color3 {
+    background-color: #c7232e;
+}
+
+.color4 {
+    background-color: #314069;
+}
+
+.color5 {
+    background-color: #abd373;
+}
+
+.product-sizes {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+    .product-sizes > a:nth-child(2) {
+        text-decoration: line-through;
+        color: #bac3d8;
+    }
+
+    .product-sizes > a {
+        color: #304068;
+    }
+
+.price-part {
+    margin: 0px 10px 0px 10px;
+}
+
+    .price-part > h2 {
+        color: #304068;
+    }
+
+    .price-part > p:nth-child(2) {
+        margin: 0px;
+        text-decoration: line-through;
+        color: #bac3d8;
+    }
+
+.product-info {
+    margin: 0px 10px 0px 10px;
+    text-align: justify;
+}
+
+    .product-info > h2 {
+        text-align: center;
+        color: #304068;
+    }
+
+.product-button {
+    background-color: #c7232e;
+    height: 50px;
+    border-style: none;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+}
+
+.price-area {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+    .price-area > a {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .price-area > p {
+        font-size: 40px;
+        color: #c7232e;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+.parameters-container {
+    width: 95%;
+    padding: 10px;
+}
+
+.parameter-row {
+    display: flex;
+    padding: 20px 10px;
+}
+
+    .parameter-row:nth-child(even) {
+        background-color: #d4d8e1;
+    }
+
+    .parameter-row:nth-child(odd) {
+        background-color: white;
+    }
+
+.parameter-label {
+    font-weight: bold;
+    color: #3d5068;
+    font-size: 20px;
+    flex: 1;
+}
+
+.parameter-value {
+    color: #6b7689;
+    font-size: 20px;
+    flex: 1;
+}
+
+.products-header {
+    text-align: center;
+    margin: 40px 0px 5px 0px;
+    font-size: 30px;
+}
+
+    .products-header > p:nth-child(1) {
+        color: #c7232e;
+        margin: 5px;
+    }
+
+    .products-header > p:nth-child(2) {
+        color: #304068;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+.products {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+    .products > div:not(.start-text):not(.products-button) {
+        display: inline-block;
+        width: calc(25% - 40px);
+        vertical-align: top;
+    }
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+    .divider::before, .divider::after {
+        content: "";
+        flex: 1;
+        border-style: solid;
+        border-color: #b8bfd0;
+        border-width: 1px;
+    }
+
+    .divider > img {
+        margin: 10px;
+    }
+
+    .divider::before {
+        margin-left: 40px;
+    }
+
+    .divider::after {
+        margin-right: 40px;
+    }
+
+.storage {
+    margin-top: 20px;
+}
+
+.storage-availability, .free-delivery, .size-measurement {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin: 10px;
+}
+
+    .storage-availability > img, .free-delivery > img, .size-measurement > img {
+        background-color: #304068;
+        border-color: #304068;
+        border-style: solid;
+        border-radius: 50%;
+    }
+
+.newsletter {
+    background-image: url(../images/img2/Newsletter.png);
+    margin: 30px 0px 0px 0px;
+    height: 300px;
+    background-repeat: no-repeat;
+    padding: 8px;
+}
+
+    .newsletter > p {
+        text-align: center;
+        margin: 0px;
+    }
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+
+    .newsletter-form > input[type = "email"] {
+        width: 300px;
+        height: 44px;
+        font-size: 16px;
+        padding-left: 10px;
+        border-style: solid;
+        border-color: #b4bed5;
+        border-width: 1px;
+    }
