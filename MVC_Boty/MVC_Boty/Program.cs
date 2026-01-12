@@ -8,6 +8,9 @@ namespace MVC_Boty
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDistributedMemoryCache();
+
             builder.Services.AddSession();
 
             var app = builder.Build();
@@ -17,6 +20,9 @@ namespace MVC_Boty
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseAuthorization();

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="~/MVC_Boty.styles.css" asp-append-version="true" />
 
     @RenderSection("adminstyles", required: false);
+    @RenderSection("accountstyles", required: false);
+    @RenderSection("productstyles", required: false);
+    @RenderSection("orderstyles", required: false);
+    @RenderSection("categorystyles", required: false);
 </head>
 <body>
     <header>
@@ -28,10 +32,10 @@
     </section>
 
     <div class="nav-bar">
-        <div class="nav-item">Products</div>
-        <div class="nav-item">Categories</div>
-        <div class="nav-item">Accounts</div>
-        <div class="nav-item">Orders</div>
+        <a asp-action="Products"><div class="nav-item">Products</div></a>
+        <a asp-action="Categories"><div class="nav-item">Categories</div></a>
+        <a asp-action="Accounts"><div class="nav-item">Accounts</div></a>
+        <a asp-action="Orders"><div class="nav-item">Orders</div></a>
     </div>
 
     <div class="container">

@@ -1,8 +1,16 @@
-﻿@model ViewModel
+﻿@model List<CategoriesModel>
 @{
     ViewData["Title"] = "Categories";
 }
 
-@section adminstyles {
-    <link rel="stylesheet" href="~/css/Admin.css" />
+@section categorystyles {
+    <link rel="stylesheet" href="~/css/Categories.css" />
+}
+
+@foreach (var category in Model)
+{
+    <div class="category-info">
+        <div>@category.Name</div>
+        <div>@category.Description</div>
+    </div>
 }

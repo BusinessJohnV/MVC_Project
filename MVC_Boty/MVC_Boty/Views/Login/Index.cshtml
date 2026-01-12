@@ -11,15 +11,15 @@
     <h1>Welcome back</h1>
     <p class="subtitle">Please enter your details to sign in</p>
 
-    <form id="loginForm">
+    <form asp-action="Login">
         <div class="input-group">
             <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter your username" required>
+            <input asp-for="Username" id="username" placeholder="Enter your username" required>
         </div>
 
         <div class="input-group">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
+            <input asp-for="Password" id="password" placeholder="Enter your password" required>
         </div>
 
         <button type="submit">Přihlásit se</button>

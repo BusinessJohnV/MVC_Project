@@ -1,5 +1,4 @@
-﻿@model ViewModel
-@{
+﻿@{
     ViewData["Title"] = "Cart";
 }
 
@@ -10,7 +9,11 @@
 </div>
 
 <div class="cart-form">
-    <img src="~/images/img/Child.png" alt="child">
+    <div class="cart-items">
+        @{
+            var item = Context.Session.GetString("Cart");
+        }
+    </div>
     <div class="form-place">
         <div class="form-header">
             <h2>Poptávkový formulář</h2>

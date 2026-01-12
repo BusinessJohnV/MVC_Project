@@ -1,0 +1,21 @@
+﻿@model List<AccountsModel>
+@{
+    ViewData["Title"] = "Accounts";
+}
+
+@section accountstyles {
+    <link rel="stylesheet" href="~/css/Account.css" />
+}
+
+@foreach (var account in Model)
+{
+    <div class="account-info">
+        <div>@account.Username</div>
+        <div>@account.Password</div>
+        <div>@account.Name</div>
+        <div>@account.Surname</div>
+        <div>@account.Email</div>
+        <div>@account.Phone</div>
+        <div>@account.Country</div>
+    </div>
+}

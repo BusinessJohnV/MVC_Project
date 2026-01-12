@@ -1,0 +1,25 @@
+﻿@model List<OrdersModel>
+@{
+    ViewData["Title"] = "Products";
+}
+
+@section orderstyles {
+    <link rel="stylesheet" href="~/css/Orders.css" />
+}
+
+@foreach (var order in Model)
+{
+    <div class="product-info">
+        <div>@order.OrderDate</div>
+        <div>@order.ShippingDate</div>
+        <div>@order.CustomerName</div>
+        <div>@order.CustomerAddress</div>
+        <div>@order.CustomerCity</div>
+        <div>@order.CustomerRegion</div>
+        <div>@order.CustomerPostcode</div>
+        <div>@order.Country</div>
+        <div>@order.Quantity</div>
+        <div>@order.Price</div>
+        <div>@order.Discount</div>
+    </div>
+}

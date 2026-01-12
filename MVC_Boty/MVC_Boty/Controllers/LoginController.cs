@@ -1,34 +1,38 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_Boty.Database;
 using MVC_Boty.Models;
+using System.Diagnostics;
 using System.Text.Json;
 
 namespace MVC_Boty.Controllers
 {
     public class LoginController : Controller
     {
-        [HttpGet]
+        MyContext context = new();
+
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Index(LoginModel login)
+        public IActionResult Login(LoginModel login)
         {
-            MyContext context = new();
-            Accounts acc = new();
-            acc = context.Accounts.Find(login.Username);
+            var acc = context.Accounts.FirstOrDefault(a => a.Username == login.Username);
 
-            if (acc != null && login.Password == acc.Password)
+            if (acc != null)
             {
-                var loginList = new List<string>() { login.Username, login.Password };
-
-                HttpContext.Session.SetString("Login", JsonSerializer.Serialize(loginList));
+                HttpContext.Session.SetInt32("Login", acc.Id);
+                HttpContext.Session.SetString("Role", acc.AccountType.ToString());
                 return RedirectToAction("Index", "Home");
             }
 
-            return View(login);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("Login");
+            return RedirectToAction("Index");
         }
     }
 }

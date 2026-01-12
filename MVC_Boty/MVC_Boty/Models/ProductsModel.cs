@@ -1,6 +1,6 @@
 ﻿namespace MVC_Boty.Models
 {
-    public class ProductDetails
+    public class ProductsModel
     {
         public int Id { get; set; }
 
@@ -14,9 +14,8 @@
 
         public float Price { get; set; }
 
-        public string ImagePath { get; set; }
+        public string ProductName { get; set; }
 
-
-        public Products Product { get; set; }
+        public string? Description { get; set; }
     }
 }
