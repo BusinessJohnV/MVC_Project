@@ -64,60 +64,6 @@
         text-align: center;
     }
 
-.lower-categories {
-    font-size: 24px;
-    text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 20px 40px;
-}
-
-.lower-div-m {
-    background-image: url(../images/img/01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
-    margin: 0px;
-    height: 250px;
-    color: #304068;
-}
-
-.boys:hover {
-    text-decoration: underline;
-    text-decoration-color: #304068;
-}
-
-.lower-div-f {
-    background-image: url(../images/img/02.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
-    margin: 0px;
-    height: 250px;
-    color: #c7232f;
-}
-
-.girls:hover {
-    text-decoration: underline;
-    text-decoration-color: #c7232f;
-}
-
-.lower-div-o {
-    background-image: url(../images/img/03-01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
-    margin: 0px;
-    height: 250px;
-    color: #304068;
-}
-
-.other:hover {
-    text-decoration: underline;
-    text-decoration-color: #304068;
-}
-
 .cart-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,6 +89,56 @@ a > .product-cart {
     color: #304068;
     font-weight: bold;
 }
+
+.products-button {
+    text-align: center;
+}
+
+products-button:hover {
+    background-color: #8a1920;
+}
+
+.products-button > a {
+    font-size: 16px;
+    background-color: #c7232f;
+    border-style: none;
+    padding: 15px;
+}
+
+.products-button > a {
+    color: white;
+}
+
+.product {
+    border-style: solid;
+    border-color: #b4bed5;
+    margin: 10px;
+    display: inline-block;
+    width: calc(25% - 40px);
+    vertical-align: top;
+}
+
+    .product > a > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product > a > p {
+        font-size: 18px;
+        color: #304068;
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .product > a > .product-cart {
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+
+    .product:hover {
+        border-color: #c7232f;
+    }
 
 .new-price {
     font-size: 20px;

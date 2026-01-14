@@ -20,7 +20,24 @@
         <span>777 666 555 | info@nejlepsiboty.cz</span>
         <a asp-controller="Login" asp-action="Index">
             <img src="~/images/img/profile-user.png" alt="profile">
-            <span class="login">Přihlásit se</span>
+            @if (Context.Session.GetInt32("Login") == null)
+            {
+                <span class="login">Přihlásit se</span>
+            }
+            else
+            {
+                <div>
+                    <div class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Účet</div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" asp-controller="Profile" asp-action="Index">Profile</a></li>
+                        @if (Context.Session.GetString("Role") == "Admin")
+                        {
+                            <li><a class="dropdown-item" asp-controller="Admin" asp-action="Index">Admin Panel</a></li>
+                        }
+                        <li><a class="dropdown-item" asp-controller="Login" asp-action="Logout">Odhlásit se</a></li>
+                    </ul>
+                </div>
+            }
         </a>
     </header>
 

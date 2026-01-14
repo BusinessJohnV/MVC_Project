@@ -12,6 +12,10 @@ namespace MVC_Boty.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetInt32("Login") != null)
+            {
+                RedirectToAction("Index", "Home");
+            }
             return View();
         }
 

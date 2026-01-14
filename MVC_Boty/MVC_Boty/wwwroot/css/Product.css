@@ -35,7 +35,7 @@ products-button:hover {
 
     .product > a > img {
         width: 100%;
-        height: width;
+        height: 100%;
     }
 
     .product > a > p {

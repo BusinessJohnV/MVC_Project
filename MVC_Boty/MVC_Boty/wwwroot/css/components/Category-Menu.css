@@ -1,0 +1,12 @@
+﻿.category {
+    color: black;
+}
+
+.category-div {
+    background-image: url(../images/img/01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    margin: 0px;
+    height: 250px;
+}

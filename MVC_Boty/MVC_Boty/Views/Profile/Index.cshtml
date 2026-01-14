@@ -8,47 +8,52 @@
     <link rel="stylesheet" href="~/css/Profile.css" />
 }
 
-<form asp-action="Update">
-    <div>
-        <label for="username">Uživatelské jméno</label>
-        <input asp-for="Username" id="username" />
+<form asp-action="Update" class="profile-form">
+    <h2 class="form-title">Můj profil</h2>
+
+    <div class="form-group">
+        <label asp-for="Username">Uživatelské jméno</label>
+        <input asp-for="Username" class="form-control" />
     </div>
 
-    <div>
-        <label for="password">Heslo</label>
-        <input asp-for="Password" id="password" />
+    <div class="form-group">
+        <label asp-for="Password">Heslo</label>
+        <input asp-for="Password" type="password" class="form-control" />
     </div>
 
-    <div>
-        <label for="name">Jméno</label>
-        <input asp-for="Name" id="name" />
+    <div class="form-row">
+        <div class="form-group">
+            <label asp-for="Name">Jméno</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Surname">Příjmení</label>
+            <input asp-for="Surname" class="form-control" />
+        </div>
     </div>
 
-    <div>
-        <label for="surname">Příjmení</label>
-        <input asp-for="Surname" id="surname" />
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" type="email" class="form-control" />
     </div>
 
-    <div>
-        <label for="email">Email</label>
-        <input asp-for="Email" id="email" />
+    <div class="form-group">
+        <label asp-for="Phone">Telefon</label>
+        <input asp-for="Phone" class="form-control" />
     </div>
 
-    <div>
-        <label for="phone">Telefon</label>
-        <input asp-for="Phone" id="phone" />
-    </div>
-
-    <div>
-        <label for="country">Země</label>
-        <input asp-for="Country" id="country" />
-
-        <datalist id="country">
-            <option value="ČR"></option>
-            <option value="SR"></option>
+    <div class="form-group">
+        <label asp-for="Country">Země</label>
+        <input asp-for="Country" list="countries" class="form-control" />
+        <datalist id="countries">
+            <option value="Česká republika"></option>
+            <option value="Slovensko"></option>
         </datalist>
     </div>
 
-    <button type="submit">Uložit</button>
-    <button type="reset">Zrušit</button>
+    <div class="form-actions">
+        <button type="submit" class="btn-primary">Uložit změny</button>
+        <button type="reset" class="btn-secondary">Zrušit</button>
+    </div>
 </form>

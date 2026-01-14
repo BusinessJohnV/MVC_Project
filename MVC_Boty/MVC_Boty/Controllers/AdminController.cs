@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MVC_Boty.Database;
 using MVC_Boty.Models;
 
@@ -51,7 +52,9 @@ namespace MVC_Boty.Controllers
         public IActionResult Orders()
         {
             var orders = context.Orders
-                .Join(context.OrderDetails, o => o.Id, od => od.OrderId,
+                .Join(context.OrderDetails, 
+                o => o.Id, 
+                od => od.OrderId,
                 (o, od) => new OrdersModel
                 {
                     Id = o.Id,
@@ -89,12 +92,73 @@ namespace MVC_Boty.Controllers
                         Color = pd.Color,
                         Size = pd.Size,
                         Price = pd.Price,
+                        Discount = pd.Discount,
                         ProductName = p.ProductName,
                         Description = p.Description
                     })
                 .ToList();
 
             return View(prods);
+        }
+
+        public IActionResult DeleteAccount(int Id)
+        {
+            var account = context.Accounts.Find(Id);
+
+            if (account == null)
+            {
+                return View();
+            }
+
+            context.Accounts.Remove(account);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeleteCategory(int Id)
+        {
+            var category = context.Categories.Find(Id);
+
+            if (category == null || context.Categories.FirstOrDefault(c => c.ParentId == Id) == null)
+            {
+                return View();
+            }
+
+            context.Categories.Remove(category);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeleteOrder(int Id)
+        {
+            var order = context.Accounts.Find(Id);
+
+            if (order == null)
+            {
+                return View();
+            }
+
+            context.Accounts.Remove(order);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeleteProduct(int Id)
+        {
+            var product = context.Accounts.Find(Id);
+
+            if (product == null)
+            {
+                return View();
+            }
+
+            context.Accounts.Remove(product);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }

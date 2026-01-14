@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MVC_Boty.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/components/Category-Menu.css" asp-append-version="true" />
 
     @RenderSection("styles", required: false)
     @RenderSection("loginstyles", required: false)
     @RenderSection("registerstyles", required: false)
     @RenderSection("productstyles", required: false)
     @RenderSection("profilestyles", required: false)
+    @RenderSection("orderstyles", required: false)
+    @RenderSection("filterstyles", required: false)
 </head>
 <body>
     <header>
@@ -37,6 +40,48 @@
                         <li><a class="dropdown-item" asp-controller="Login" asp-action="Logout">Odhlásit se</a></li>
                     </ul>
                 </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Účet
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item"
+                               asp-controller="Profile"
+                               asp-action="Index">
+                                Profil
+                            </a>
+                        </li>
+
+                        @if (Context.Session.GetString("Role") == "Admin")
+                        {
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-controller="Admin"
+                                   asp-action="Index">
+                                    Admin panel
+                                </a>
+                            </li>
+                        }
+
+                        <li><hr class="dropdown-divider"></li>
+
+                        <li>
+                            <a class="dropdown-item text-danger"
+                               asp-controller="Login"
+                               asp-action="Logout">
+                                Odhlásit se
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             }
         </a>
     </header>
@@ -48,19 +93,9 @@
         <a href="#"><img src="~/images/img/heart.png" alt="heart" class="gr"></a>
     </section>
 
-    <table class="categories-table">
-        <tbody>
-            <tr>
-                <td class="uppertd">Chlapecké<img src="~/images/img/Group 169.png" alt="boy"></td>
-                <td class="uppertd">Dívčí<img src="~/images/img/Group 171.png" alt="girl"></td>
-            </tr>
-
-            <tr>
-                <td class="uppertd">Doplňky</td>
-                <td class="uppertd">Ostatní</td>
-            </tr>
-        </tbody>
-    </table>
+    <section class="lower-categories">
+        @await Component.InvokeAsync("CategoryMenu")
+    </section>
 
     <div class="container">
         <main role="main" class="pb-3">

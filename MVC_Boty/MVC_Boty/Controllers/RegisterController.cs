@@ -7,16 +7,15 @@ namespace MVC_Boty.Controllers
 {
     public class RegisterController : Controller
     {
-        [HttpGet]
+        MyContext context = new();
+
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Index(RegisterModel register)
+        public IActionResult Register(RegisterModel register)
         {
-            MyContext context = new();
             Accounts acc = new()
             {
                 Name = register.Name,
@@ -30,10 +29,14 @@ namespace MVC_Boty.Controllers
             context.Accounts.Add(acc);
             context.SaveChanges();
 
-            var loginList = new List<string>() { register.Username, register.Password };
+            if (acc != null)
+            {
+                HttpContext.Session.SetInt32("Login", acc.Id);
+                HttpContext.Session.SetString("Role", acc.AccountType.ToString());
+                return RedirectToAction("Index", "Home");
+            }
 
-            HttpContext.Session.SetString("Login", JsonSerializer.Serialize(loginList));
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index");
         }
     }
 }

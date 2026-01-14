@@ -1,7 +1,8 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MVC_Boty.Database;
 using MVC_Boty.Models;
+using Mysqlx.Crud;
+using System.Diagnostics;
 
 namespace MVC_Boty.Controllers
 {
@@ -17,7 +18,27 @@ namespace MVC_Boty.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var products = context.Products
+                .Join(context.ProductDetails,
+                p => p.Id,
+                pd => pd.ProductId,
+                (p, pd) => new ProductsModel
+                {
+                    Id = p.Id,
+                    ProductId = pd.ProductId,
+                    Quantity = pd.Quantity,
+                    Color = pd.Color,
+                    Size = pd.Size,
+                    Price = pd.Price,
+                    Discount = pd.Discount,
+                    ProductName = p.ProductName,
+                    Description = p.Description,
+                    ImagePath = pd.ImagePath
+                })
+                .Take(4)
+                .ToList();
+
+            return View(products);
         }
 
         public IActionResult Privacy()

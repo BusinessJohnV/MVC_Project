@@ -1,0 +1,121 @@
+﻿@model List<ProductsModel>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+@section filterstyles {
+    <link href="~/css/" rel="stylesheet" />
+}
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Filtrovat produkty</h3>
+
+        <div class="filter-group">
+            <h4>Kategorie</h4>
+            <div class="filter-option">
+                <input type="checkbox" id="tenisky" checked>
+                <label for="tenisky">Tenisky</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="sandaly">
+                <label for="sandaly">Sandály</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="boty">
+                <label for="boty">Holínky</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="papucky">
+                <label for="papucky">Papučky</label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Značka</h4>
+            <div class="filter-option">
+                <input type="checkbox" id="barefoot">
+                <label for="barefoot">Barefoot</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="brand2">
+                <label for="brand2">Nike</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="brand3">
+                <label for="brand3">Adidas</label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Velikost</h4>
+            <div class="filter-option">
+                <input type="checkbox" id="size1">
+                <label for="size1">20-25</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="size2">
+                <label for="size2">26-30</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="size3">
+                <label for="size3">31-35</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="size4">
+                <label for="size4">36-40</label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Cena</h4>
+            <div class="price-range">
+                <input type="number" placeholder="Od" value="0">
+                <span>-</span>
+                <input type="number" placeholder="Do" value="1000">
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Barva</h4>
+            <div class="filter-option">
+                <input type="checkbox" id="color1">
+                <label for="color1">Hnědá</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="color2">
+                <label for="color2">Růžová</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="color3">
+                <label for="color3">Modrá</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="color4">
+                <label for="color4">Černá</label>
+            </div>
+        </div>
+
+        <button class="apply-filter">Použít filtry</button>
+    </aside>
+
+    <main class="products-section">
+        <div class="products-header">
+            <h2>Všechny produkty</h2>
+            <div class="sort-by">
+                <span>Řadit:</span>
+                <select>
+                    <option>Nejnovější</option>
+                    <option>Cena: Od nejnižší</option>
+                    <option>Cena: Od nejvyšší</option>
+                    <option>Název: A-Z</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+
+        </div>
+    </main>
+</div>

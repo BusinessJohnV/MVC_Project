@@ -9,17 +9,32 @@
 
 @foreach (var order in Model)
 {
-    <div class="product-info">
-        <div>@order.OrderDate</div>
-        <div>@order.ShippingDate</div>
-        <div>@order.CustomerName</div>
-        <div>@order.CustomerAddress</div>
-        <div>@order.CustomerCity</div>
-        <div>@order.CustomerRegion</div>
-        <div>@order.CustomerPostcode</div>
-        <div>@order.Country</div>
-        <div>@order.Quantity</div>
-        <div>@order.Price</div>
-        <div>@order.Discount</div>
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">Objednávka – @order.CustomerName</h5>
+
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item"><strong>Objednáno:</strong> @order.OrderDate</li>
+                <li class="list-group-item"><strong>Odesláno:</strong> @order.ShippingDate</li>
+                <li class="list-group-item"><strong>Adresa:</strong> @order.CustomerAddress</li>
+                <li class="list-group-item"><strong>Město:</strong> @order.CustomerCity</li>
+                <li class="list-group-item"><strong>Region:</strong> @order.CustomerRegion</li>
+                <li class="list-group-item"><strong>PSČ:</strong> @order.CustomerPostcode</li>
+                <li class="list-group-item"><strong>Stát:</strong> @order.Country</li>
+                <li class="list-group-item"><strong>Množství:</strong> @order.Quantity</li>
+                <li class="list-group-item"><strong>Cena:</strong> @order.Price Kč</li>
+                <li class="list-group-item"><strong>Sleva:</strong> @order.Discount %</li>
+            </ul>
+
+            <div class="d-flex gap-2">
+                <a asp-action="DeleteOrder" asp-route-id="@order.Id" class="btn btn-danger btn-sm">
+                    Smazat
+                </a>
+                <a asp-action="EditOrder" asp-route-id="@order.Id" class="btn btn-warning btn-sm">
+                    Upravit
+                </a>
+            </div>
+        </div>
     </div>
+
 }

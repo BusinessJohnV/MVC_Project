@@ -1,0 +1,11 @@
+﻿@model List<Categories>
+
+<a asp-controller="Filter" asp-action="Index" class="category">
+    <div class="category-div">
+        @foreach (var category in Model)
+        {
+            <img src="@category.ImagePath" alt="Category Background Image" />
+            @category.Name;
+        }
+    </div>
+</a>

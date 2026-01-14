@@ -1,1 +1,53 @@
-﻿
+﻿.profile-form {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.form-title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #555;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #c62828;
+    }
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}

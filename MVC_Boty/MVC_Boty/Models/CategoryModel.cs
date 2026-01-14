@@ -1,6 +1,6 @@
 ﻿namespace MVC_Boty.Models
 {
-    public class Categories
+    public class CategoryModel
     {
         public int Id { get; set; }
 
@@ -11,11 +11,5 @@
         public string? Description { get; set; }
 
         public string ImagePath { get; set; }
-
-
-        public ICollection<Products> Products { get; set; }
-        public ICollection<Categories> ParentCategories { get; set; }
-
-        public Categories Category { get; set; }
     }
 }

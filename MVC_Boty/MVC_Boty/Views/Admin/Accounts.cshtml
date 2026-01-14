@@ -9,13 +9,25 @@
 
 @foreach (var account in Model)
 {
-    <div class="account-info">
-        <div>@account.Username</div>
-        <div>@account.Password</div>
-        <div>@account.Name</div>
-        <div>@account.Surname</div>
-        <div>@account.Email</div>
-        <div>@account.Phone</div>
-        <div>@account.Country</div>
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">@account.Username</h5>
+
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item"><strong>Jméno:</strong> @account.Name @account.Surname</li>
+                <li class="list-group-item"><strong>Email:</strong> @account.Email</li>
+                <li class="list-group-item"><strong>Telefon:</strong> @account.Phone</li>
+                <li class="list-group-item"><strong>Stát:</strong> @account.Country</li>
+            </ul>
+
+            <div class="d-flex gap-2">
+                <a asp-action="DeleteAccount" asp-route-id="@account.Id" class="btn btn-danger btn-sm">
+                    Smazat
+                </a>
+                <a asp-action="EditAccount" asp-route-id="@account.Id" class="btn btn-warning btn-sm">
+                    Upravit
+                </a>
+            </div>
+        </div>
     </div>
 }

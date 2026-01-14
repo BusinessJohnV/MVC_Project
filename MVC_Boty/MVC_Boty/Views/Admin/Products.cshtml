@@ -9,12 +9,27 @@
 
 @foreach (var product in Model)
 {
-    <div class="product-info">
-        <div>@product.ProductName</div>
-        <div>@product.Quantity</div>
-        <div>@product.Color</div>
-        <div>@product.Size</div>
-        <div>@product.Price</div>
-        <div>@product.Description</div>
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">@product.ProductName</h5>
+
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item"><strong>Množství:</strong> @product.Quantity</li>
+                <li class="list-group-item"><strong>Barva:</strong> @product.Color</li>
+                <li class="list-group-item"><strong>Velikost:</strong> @product.Size</li>
+                <li class="list-group-item"><strong>Cena:</strong> @product.Price Kč</li>
+                <li class="list-group-item"><strong>Popis:</strong> @product.Description</li>
+            </ul>
+
+            <div class="d-flex gap-2">
+                <a asp-action="DeleteProduct" asp-route-id="@product.Id" class="btn btn-danger btn-sm">
+                    Smazat
+                </a>
+                <a asp-action="EditProduct" asp-route-id="@product.Id" class="btn btn-warning btn-sm">
+                    Upravit
+                </a>
+            </div>
+        </div>
     </div>
+
 }

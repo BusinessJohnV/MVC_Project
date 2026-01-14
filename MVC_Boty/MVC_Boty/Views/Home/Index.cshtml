@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<ProductsModel>
+
+@{
     ViewData["Title"] = "Boty E-shop";
 }
 
@@ -11,31 +13,11 @@
     <p class="main-title">Nejen do města, ale i do přírody</p>
 
     <div class="products-button">
-        <a href="#">
+        <a asp-controller="Filter" asp-action="Index">
             zobrazit celou nabídku
         </a>
     </div>
 </div>
-
-<section class="lower-categories">
-    <a href="#" class="boys">
-        <div class="lower-div-m">
-            Klučičí boty
-        </div>
-    </a>
-
-    <a href="#" class="girls">
-        <div class="lower-div-f">
-            Dívčí boty
-        </div>
-    </a>
-
-    <a href="#" class="other">
-        <div class="lower-div-o">
-            Jak správně vybrat?
-        </div>
-    </a>
-</section>
 
 <div class="divider">
     <img src="~/images/img/Group 295.png" alt="feet">
@@ -47,88 +29,21 @@
         <p class="lower-text">v naší nabídce</p>
     </div>
 
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/Barefoot-Brown.png" alt="hnědá bota">
-            <p>Papučky barefoot hnědé kožené</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index" ">
-            <img src="~/images/img2/Barefoot-Pink.png" alt="růžová bota">
-            <p>Papučky barefoot růžové</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/Sandals-Blue.png" alt="modré sandále">
-            <p>Sandálky modré umělé</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/High-Shoes.png" alt="modré vysoké boty">
-            <p>Netlačící boty s vysokou špičkou</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/Barefoot-Brown.png" alt="hnědá bota">
-            <p>Papučky barefoot hnědé kožené</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/Barefoot-Pink.png" alt="růžová bota">
-            <p>Papučky barefoot růžové</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/Sandals-Blue.png" alt="modré sandále">
-            <p>Sandálky modré umělé</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
-
-    <div class="product">
-        <a asp-controller="Product" asp-action="Index">
-            <img src="~/images/img2/High-Shoes.png" alt="modré vysoké boty">
-            <p>Netlačící boty s vysokou špičkou</p>
-            <span class="new-price">529 Kč</span>
-            <span class="old-price">699 Kč</span>
-            <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart">
-        </a>
-    </div>
+    @foreach (var product in Model)
+    {
+        <div class="product">
+            <a asp-controller="Product" asp-action="Index">
+                <img src="@product.ImagePath" alt="product-image" />
+                <p>@product.ProductName</p>
+                <span class="new-price">@product.Price * @product.Discount</span>
+                <span class="old-price">@product.Price</span>
+                <img src="~/images/img/shopping-cart.png" alt="cart" class="product-cart" />
+            </a>
+        </div>
+    }
 
     <div class="products-button">
-        <a href="#">
+        <a asp-controller="Filter" asp-action="Index">
             zobrazit celou nabídku
         </a>
     </div>
